@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Evil";
+  src: url("./fonts/JimNightshade-Regular.ttf") format("truetype");
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background-color: #080808;
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: unset;
+}
+
+a {
+  text-decoration: none;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
