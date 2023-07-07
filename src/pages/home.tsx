@@ -1,5 +1,6 @@
 import { Box, Container, Typography } from "@mui/material";
 import Discord from "../buttons/discord.png";
+import Footer from "../components/footer";
 
 function Home() {
   const FONT_SIZE = "h4";

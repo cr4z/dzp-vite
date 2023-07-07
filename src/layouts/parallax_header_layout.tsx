@@ -3,6 +3,7 @@ import BindingOfIsaac from "../img/bindingisaacred.jpg";
 import DavidVsGoliath from "../img/davidvgoliathred.png";
 import DougZoneBanner from "../img/dzbanner.png";
 import { useBreakpointHelper } from "../hooks/useBreakpointHelper";
+import Footer from "../components/footer";
 
 function ParallaxHeaderLayout(props: { children: React.ReactNode }) {
   const { currentScreenSize } = useBreakpointHelper();
@@ -21,6 +22,20 @@ function ParallaxHeaderLayout(props: { children: React.ReactNode }) {
         return "30rem";
     }
   }
+  function getContentHeight() {
+    switch (currentScreenSize) {
+      case "xs":
+        return "62rem";
+      case "sm":
+        return "58rem";
+      case "md":
+        return "55rem";
+      case "lg":
+        return "48rem";
+      case "xl":
+        return "42rem";
+    }
+  }
 
   return (
     <ParallaxContainer>
@@ -33,7 +48,8 @@ function ParallaxHeaderLayout(props: { children: React.ReactNode }) {
       <ParallaxBase>
         <Box sx={{ position: "absolute", width: "100%" }}>
           <Box sx={{ filter: "blur(.5px)" }} height={getHeight()} component="img" src={DougZoneBanner} />
-          <Box sx={{ bgcolor: "#111", mt: "-4px", minHeight: "80vh" }}>{props.children}</Box>
+          <Box sx={{ bgcolor: "#111", mt: "-4px", minHeight: getContentHeight() }}>{props.children}</Box>
+          <Footer />
         </Box>
       </ParallaxBase>
     </ParallaxContainer>

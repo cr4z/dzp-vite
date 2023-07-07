@@ -1,7 +1,7 @@
 import { Box, ButtonBase, Typography, useTheme } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useBreakpointHelper } from "../hooks/useBreakpointHelper";
-import ParallaxHeaderLayout from "../components/header_parallax";
+import ParallaxHeaderLayout from "./parallax_header_layout";
 
 function NavLayout(props: { children: React.ReactNode }) {
   const { palette } = useTheme();
