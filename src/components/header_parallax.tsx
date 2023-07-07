@@ -33,7 +33,7 @@ function ParallaxHeaderLayout(props: { children: React.ReactNode }) {
       <ParallaxBase>
         <Box sx={{ position: "absolute", width: "100%" }}>
           <Box sx={{ filter: "blur(.5px)" }} height={getHeight()} component="img" src={DougZoneBanner} />
-          <Box sx={{ bgcolor: "#111", mt: "-4px" }}>{props.children}</Box>
+          <Box sx={{ bgcolor: "#111", mt: "-4px", minHeight: "80vh" }}>{props.children}</Box>
         </Box>
       </ParallaxBase>
     </ParallaxContainer>

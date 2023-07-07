@@ -5,7 +5,14 @@ import PNGButton from "../components/png_button";
 
 function Listen() {
   return (
-    <Container>
+    <Container
+      maxWidth="lg"
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       <Box sx={{ width: "100%", display: "flex", justifyContent: "space-around", my: "4rem" }}>
         <Box sx={{ display: "flex", gap: "4rem" }}>
           <PNGButton src={Spotify} />

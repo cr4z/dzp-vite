@@ -1,10 +1,12 @@
-import { Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 
 function Merch() {
   return (
-    <>
-      <Typography className="noselect" mt="5rem" variant="h3">Coming soon...</Typography>
-    </>
+    <Container maxWidth="lg">
+      <Typography className="noselect" pt="5rem" variant="h3">
+        Coming soon...
+      </Typography>
+    </Container>
   );
 }
 
