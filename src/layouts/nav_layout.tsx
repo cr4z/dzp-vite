@@ -1,7 +1,7 @@
 import { Box, ButtonBase, Typography, useTheme } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import Header from "../components/header";
 import { useBreakpointHelper } from "../hooks/useBreakpointHelper";
+import ParallaxHeaderLayout from "../components/header_parallax";
 
 function NavLayout(props: { children: React.ReactNode }) {
   const { palette } = useTheme();
@@ -22,8 +22,7 @@ function NavLayout(props: { children: React.ReactNode }) {
       </Box>
 
       <Box sx={{ height: "100%", overflowY: "auto" }}>
-        <Header />
-        {props.children}
+        <ParallaxHeaderLayout>{props.children}</ParallaxHeaderLayout>
       </Box>
     </Box>
   );

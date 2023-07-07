@@ -54,8 +54,8 @@ function BaroqueImage(props: { sx: SxProps; src: string; height: string; backgro
         width: "30%",
         objectFit: "cover",
 
-        backgroundAttachment: "fixed",
         backgroundImage: `url(${props.src})`,
+        backgroundAttachment: "fixed",
         backgroundSize: "30% auto",
         backgroundPosition: `${props.backgroundPositionX} 0%`,
 
@@ -64,5 +64,19 @@ function BaroqueImage(props: { sx: SxProps; src: string; height: string; backgro
     />
   );
 }
+
+// function BaroqueImage(props: { src: string; height: string; scrollPosY: number }) {
+//   return (
+//     <Box
+//       sx={{
+//         height: props.height,
+//         width: "30%",
+//         transform: `translateY(${props.scrollPosY})`,
+//       }}
+//       component="img"
+//       src={props.src}
+//     />
+//   );
+// }
 
 export default Header;
