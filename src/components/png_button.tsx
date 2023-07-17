@@ -1,18 +1,20 @@
 import { Box } from "@mui/system";
 
-function PNGButton(props: { src: string }) {
+function PNGButton(props: { src: string; href: string }) {
   return (
-    <Box
-      sx={{
-        borderRadius: "1rem",
-        border: "2px #333 solid",
-        boxShadow: 4,
-        width: "10rem",
-        cursor: "pointer",
-      }}
-      component="img"
-      src={props.src}
-    />
+    <a href={props.href} target="_blank">
+      <Box
+        sx={{
+          borderRadius: "1rem",
+          border: "2px #333 solid",
+          boxShadow: 4,
+          width: "10rem",
+          cursor: "pointer",
+        }}
+        component="img"
+        src={props.src}
+      />
+    </a>
   );
 }
 

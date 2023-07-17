@@ -65,15 +65,17 @@ function Footer() {
             padding: "1rem",
           }}
         >
-          <Typography gutterBottom variant="h6">Available on these platforms!</Typography>
+          <Typography gutterBottom variant="h6">
+            Support us on these platforms!
+          </Typography>
           <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-            <IconButton>
+            <IconButton target="_blank" href="https://www.patreon.com/thedougzone">
               <Patreon />
             </IconButton>
-            <IconButton>
+            <IconButton target="_blank" href="https://www.instagram.com/dougzonecast/?hl=en">
               <Instagram />
             </IconButton>
-            <IconButton>
+            <IconButton target="_blank" href="https://twitter.com/dougzonecast">
               <Twitter />
             </IconButton>
           </Box>
