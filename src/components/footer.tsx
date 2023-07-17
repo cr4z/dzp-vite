@@ -10,7 +10,7 @@ import { useBreakpointHelper } from "../hooks/useBreakpointHelper";
 
 function Footer() {
   const { palette } = useTheme();
-  const { currentScreenSize, isGreaterThanEqualTo } = useBreakpointHelper();
+  const { currentScreenSize, isGreaterThanEqualTo, isMobile } = useBreakpointHelper();
 
   function getSize() {
     switch (currentScreenSize) {
@@ -72,10 +72,22 @@ function Footer() {
             <IconButton target="_blank" href="https://www.patreon.com/thedougzone">
               <Patreon />
             </IconButton>
-            <IconButton target="_blank" href="https://www.instagram.com/dougzonecast/?hl=en">
+            <IconButton
+              target="_blank"
+              href={
+                isMobile
+                  ? "instagram://user?username=dougzonecast"
+                  : "https://www.instagram.com/dougzonecast/"
+              }
+            >
               <Instagram />
             </IconButton>
-            <IconButton target="_blank" href="https://twitter.com/dougzonecast">
+            <IconButton
+              target="_blank"
+              href={
+                isMobile ? "twitter://user?screen_name=dougzonecast" : "https://twitter.com/dougzonecast/"
+              }
+            >
               <Twitter />
             </IconButton>
           </Box>
