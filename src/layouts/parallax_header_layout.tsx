@@ -25,7 +25,7 @@ function ParallaxHeaderLayout(props: { children: React.ReactNode }) {
   function getContentHeight() {
     switch (currentScreenSize) {
       case "xs":
-        return "80rem";
+        return "100rem";
       case "sm":
         return "58rem";
       case "md":
