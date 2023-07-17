@@ -2,6 +2,10 @@
   font-family: "Evil";
   src: url("./fonts/JimNightshade-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto_Flex/RobotoFlex-VariableFont_wght.ttf") format("truetype");
+}
 
 html,
 body,

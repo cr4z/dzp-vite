@@ -7,17 +7,15 @@ import NavLayout from "./layouts/nav_layout";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <NavLayout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/merch" element={<Merch />} />
-            <Route path="/listen" element={<Listen />} />
-          </Routes>
-        </NavLayout>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <NavLayout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/merch" element={<Merch />} />
+          <Route path="/listen" element={<Listen />} />
+        </Routes>
+      </NavLayout>
+    </BrowserRouter>
   );
 }
 
