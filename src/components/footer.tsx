@@ -82,12 +82,7 @@ function Footer() {
             >
               <Instagram />
             </IconButton>
-            <IconButton
-              target="_blank"
-              href={
-                isMobile ? "twitter://user?screen_name=dougzonecast" : "https://twitter.com/dougzonecast/"
-              }
-            >
+            <IconButton target="_blank" href="https://twitter.com/dougzonecast">
               <Twitter />
             </IconButton>
           </Box>
