@@ -1,4 +1,4 @@
-import { Box, Container, Grid, SxProps } from "@mui/material";
+import { Box, Container, Grid } from "@mui/material";
 import Spotify from "../buttons/spotify.png";
 import Apple from "../buttons/apple.png";
 import PNGButton from "../components/png_button";

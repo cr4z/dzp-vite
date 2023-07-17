@@ -1,4 +1,4 @@
-import { Box, Container, Typography, styled } from "@mui/material";
+import { Box, styled } from "@mui/material";
 import BindingOfIsaac from "../img/bindingisaacred.jpg";
 import DavidVsGoliath from "../img/davidvgoliathred.png";
 import DougZoneBanner from "../img/dzbanner.png";
